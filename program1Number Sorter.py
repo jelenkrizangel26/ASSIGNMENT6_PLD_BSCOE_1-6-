@@ -4,21 +4,28 @@
 
 print("Hello, kindly put your 4 numbers below for me to arrange it from highest to lowest.")
 
-no1= float(input("Enter your first number: "))
-no2= float(input("Enter your second number: "))
-no3= float(input("Enter your third number: "))
-no4= float(input("Enter your fourth number: "))
+# Steps
+#1. Ask for 4 numbers
+num1= float(input("Enter your first number: "))
+num2= float(input("Enter your second number: "))
+num3= float(input("Enter your third number: "))
+num4= float(input("Enter your fourth number: "))
 
+#2. Arrange from highest to lowest
 def high_to_low(num1, num2, num3, num4):
-    if high == num1:
-        if num2 > num3 and num3 > num4:
-            print(f"Thank you! Your result is as follows: {num1}, {num2}, {num3}, and {num4}.")
-        elif num2 < num3 and num3 > num4:
-            print(f"Thank you! Your result is as follows: {num1}, {num3}, {num2}, and {num4}.")
-        elif num2 < num3 and num3 < num4:
-            print(f"Thank you! Your result is as follows: {num1}, {num3}, {num4}, and {num2}.")
+    if num1 >= num2 and num1 >= num3 and num1 >= num4:
+        if num2 >= num3 and num3 >= num4:
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num3}, and {num4}.")
+        elif num2 >= num4 and num4 >= num3:
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num4}, and {num3}.")
+        elif num3 < num4 and num4 > num2:
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num4}, and {num2}.")
+        elif num2 < num3 and num2 < num4:
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num2}, and {num4}.")
+        elif num2 <= num4 and num2 >= num3:
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num2}, and {num3}.")
         else:
-            print(f"Thank you! Your result is as follows: {num1}, {num4}, {num2}, and {num3}.")
-            return high
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num3}, and {num2}.")
+            
 
-high = high_to_low(num1 = no1, num2 = no2, num3 = no3, num4 = no4)
+high = high_to_low(num1, num2, num3, num4)

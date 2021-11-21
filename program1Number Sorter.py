@@ -15,37 +15,91 @@ num4= float(input("Enter your fourth number: "))
 def high_to_low(num1, num2, num3, num4):
     if num1 >= num2 and num1 >= num3 and num1 >= num4:
         if num2 >= num3 and num3 >= num4:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num3}, and {num4}.")
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num2}, {num3}, and {num4}.")
         elif num2 <= num3 and num2 >= num4:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num2}, and {num4}.")
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num3}, {num2}, and {num4}.")
         elif num2 <= num4 and num2 >= num3:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num2}, and {num3}.")
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num4}, {num2}, and {num3}.")
         elif num2 >= num4 and num4 >= num3:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num4}, and {num3}.")
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num2}, {num4}, and {num3}.")
         elif num4 >= num3 and num3 >= num2:
-             print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num3}, and {num2}.")
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num4}, {num3}, and {num2}.")
         else:
             if num3 >= num4 and num4 >= num2: 
-                 print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num4}, and {num2}.")
+                print(f"\nThank you! Your arrangement is as follows: {num1}, {num3}, {num4}, and {num2}.")
                
 
     if num2 >= num1 and num2 >= num3 and num2 >= num4:
         if num1>= num4 and num4 >= num3:
-            print(f"Thank you! Your arrangement is as follows: {num2}, {num1}, {num4}, and {num3}.")
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num1}, {num4}, and {num3}.")
         elif num1 <= num4 and num1 >= num3:
-            print(f"Thank you! Your arrangement is as follows: {num2}, {num4}, {num1}, and {num3}.")
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num4}, {num1}, and {num3}.")
         elif num1 >= num3 and num3 >= num4:
-            print(f"Thank you! Your arrangement is as follows: {num2}, {num1}, {num3}, and {num4}.")
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num1}, {num3}, and {num4}.")
         elif num1 <= num3 and num1 >= num4:
-            print(f"Thank you! Your arrangement is as follows: {num2}, {num3}, {num1}, and {num4}.")
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num3}, {num1}, and {num4}.")
         elif num3 >= num4 and num4 >= num1:
-            print(f"Thank you! Your arrangement is as follows: {num2}, {num3}, {num4}, and {num1}.")
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num3}, {num4}, and {num1}.")
         else:
             if num3 <= num4 and num3 >= num1:
-                print(f"Thank you! Your arrangement is as follows: {num2}, {num4}, {num3}, and {num1}.")
+                print(f"\nThank you! Your arrangement is as follows: {num2}, {num4}, {num3}, and {num1}.")
+    
+    if num3 >= num1 and num3 >= num2 and num3 >= num4:
+        if num2 >= num4 and num4 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num3}, {num2}, {num4}, and {num1}.")
+        elif num4 >= num2 and num2 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num3}, {num4}, {num2}, and {num1}.")
+        elif num4 <= num1 and num2 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num3}, {num2}, {num1}, and {num4}.")
+        elif num1 <= num2 and num1 >= num4:
+            print(f"\nThank you! Your arrangement is as follows: {num3}, {num2}, {num1}, and {num4}.")
+        elif num1 >= num4 and num4 >= num2:
+            print(f"\nThank you! Your arrangement is as follows: {num3}, {num1}, {num4}, and {num2}.")
+        else:
+            if num1 >= num2 and num2 >= num4:
+                print(f"\nThank you! Your arrangement is as follows: {num3}, {num1}, {num2}, and {num4}.")
 
-
-
-
+    if num4 >= num1 and num4 >= num2 and num4 >= num3:
+        if num3 >= num2 and num2 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num4}, {num3}, {num2}, and {num1}.")
+        elif num2 >= num1 and num1 >= num3:
+            print(f"\nThank you! Your arrangement is as follows: {num4}, {num2}, {num1}, and {num3}.")
+        elif num2 >= num3 and num3 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num4}, {num2}, {num3}, and {num1}.")
+        elif num1 <= num3 and num1 >= num2:
+            print(f"\nThank you! Your arrangement is as follows: {num4}, {num3}, {num1}, and {num2}.")
+        elif num1 >= num3 and num3 >= num2:
+            print(f"\nThank you! Your arrangement is as follows: {num4}, {num1}, {num3}, and {num2}.")
+        else:
+            if num1 >= num2 and num2 >= num3:
+                print(f"\nThank you! Your arrangement is as follows: {num4}, {num1}, {num2}, and {num3}.")
+#3. What if theres equal numbers?
+def equal_numbers(num1, num2, num3, num4):
+        if num1 == num2 and num3 >= num4:
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num2}, {num3}, and {num4} \n or \n {num1}, {num3}, and {num4}.")
+        elif num1 == num2 and num4 >= num3:
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num2}, {num4}, and {num3} \n or \n {num1}, {num4}, and {num3}.")
+        elif num1 == num3 and num2 >= num4:
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num3}, {num2}, and {num4} \n or \n {num1}, {num2}, and {num4}.")
+        elif num1 == num3 and num4 >= num2:
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num3}, {num4}, and {num2} \n or \n {num1}, {num4}, and {num2}.")
+        elif num1 == num4 and num2 >= num3:
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num4}, {num2}, and {num3} \n or \n {num1}, {num2}, and {num3}.")
+        elif num1 == num4 and num3 >= num2:
+            print(f"\nThank you! Your arrangement is as follows: {num1}, {num3}, {num3}, and {num2} \n or \n {num1}, {num3}, and {num2}.")
+        elif num2 == num3 and num1 >= num4:
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num3}, {num1}, and {num4} \n or \n {num2}, {num1}, and {num4}.")
+        elif num2 == num3 and num4 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num3}, {num4}, and {num1} \n or \n {num2}, {num4}, and {num1}.")
+        elif num2 == num4 and num1 >= num3:
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num4}, {num1}, and {num3} \n or \n {num2}, {num1}, and {num3}.")
+        elif num2 == num4 and num3 >= num1:
+            print(f"\nThank you! Your arrangement is as follows: {num2}, {num4}, {num3}, and {num1} \n or \n {num2}, {num3}, and {num1}.")
+        elif num3 == num4 and num1 >= num2:
+            print(f"\nThank you! Your arrangement is as follows: {num3}, {num4}, {num1}, and {num2} \n or \n {num3}, {num1}, and {num2}.")
+        else:
+            if num3 == num4 and num2 >= num1:
+                print(f"\nThank you! Your arrangement is as follows: {num3}, {num4}, {num2}, and {num1} \n or \n {num3}, {num2}, and {num1}.")
 
 high = high_to_low(num1, num2, num3, num4)
+equal = equal_numbers(num1, num2, num3, num4)

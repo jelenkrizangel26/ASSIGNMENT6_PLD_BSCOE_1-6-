@@ -16,16 +16,36 @@ def high_to_low(num1, num2, num3, num4):
     if num1 >= num2 and num1 >= num3 and num1 >= num4:
         if num2 >= num3 and num3 >= num4:
             print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num3}, and {num4}.")
-        elif num2 >= num4 and num4 >= num3:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num4}, and {num3}.")
-        elif num3 < num4 and num4 > num2:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num4}, and {num2}.")
-        elif num2 < num3 and num2 < num4:
+        elif num2 <= num3 and num2 >= num4:
             print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num2}, and {num4}.")
         elif num2 <= num4 and num2 >= num3:
             print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num2}, and {num3}.")
+        elif num2 >= num4 and num4 >= num3:
+            print(f"Thank you! Your arrangement is as follows: {num1}, {num2}, {num4}, and {num3}.")
+        elif num4 >= num3 and num3 >= num2:
+             print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num3}, and {num2}.")
         else:
-            print(f"Thank you! Your arrangement is as follows: {num1}, {num4}, {num3}, and {num2}.")
-            
+            if num3 >= num4 and num4 >= num2: 
+                 print(f"Thank you! Your arrangement is as follows: {num1}, {num3}, {num4}, and {num2}.")
+               
+
+    if num2 >= num1 and num2 >= num3 and num2 >= num4:
+        if num1>= num4 and num4 >= num3:
+            print(f"Thank you! Your arrangement is as follows: {num2}, {num1}, {num4}, and {num3}.")
+        elif num1 <= num4 and num1 >= num3:
+            print(f"Thank you! Your arrangement is as follows: {num2}, {num4}, {num1}, and {num3}.")
+        elif num1 >= num3 and num3 >= num4:
+            print(f"Thank you! Your arrangement is as follows: {num2}, {num1}, {num3}, and {num4}.")
+        elif num1 <= num3 and num1 >= num4:
+            print(f"Thank you! Your arrangement is as follows: {num2}, {num3}, {num1}, and {num4}.")
+        elif num3 >= num4 and num4 >= num1:
+            print(f"Thank you! Your arrangement is as follows: {num2}, {num3}, {num4}, and {num1}.")
+        else:
+            if num3 <= num4 and num3 >= num1:
+                print(f"Thank you! Your arrangement is as follows: {num2}, {num4}, {num3}, and {num1}.")
+
+
+
+
 
 high = high_to_low(num1, num2, num3, num4)

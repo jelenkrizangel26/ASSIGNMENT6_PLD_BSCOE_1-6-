@@ -12,4 +12,23 @@ pg_name = "☆☆ Krizzy's Addition Quiz ☆☆"
 print(" ╔══════════ஜ۩۞۩ஜ══════════╗")
 print(pg_name)
 print(" ╚══════════ஜ۩۞۩ஜ══════════╝")
-print("\nHello! Good day, welcome to addition quiz. Try now to test your math skills!")
+print("\nGood day, welcome to my addition quiz. Try now to test your math skills!")
+
+# 2. Ask the name
+player = input("\nKindly put your name here: ")
+
+print(f"Hello {player}, hope you're ready for this exciting quiz!")
+print("Now, let's start the quiz!")
+
+bestScore = 10
+pScore = 0
+
+quantity = 1
+while quantity <= 10:
+    rand1 = randrange(0, 99)
+    rand2 = randrange(0, 99)
+    sum = rand1 + rand2
+    print(f"Question No. {quantity}")
+    print(f"{str(rand1)} + {str(rand2)}")
+
+

@@ -28,7 +28,7 @@ while quantity <= 10:
     rand1 = randrange(0, 99)
     rand2 = randrange(0, 99)
     sum = rand1 + rand2
-    print(f"Question No. {quantity}")
+    print(f"\n ☆☆ Question No. {quantity}☆☆ ")
     print(f"{str(rand1)} + {str(rand2)}")
     ans = int(input("Your answer: "))
 

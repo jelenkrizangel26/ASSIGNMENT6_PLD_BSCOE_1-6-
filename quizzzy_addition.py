@@ -30,5 +30,6 @@ while quantity <= 10:
     sum = rand1 + rand2
     print(f"Question No. {quantity}")
     print(f"{str(rand1)} + {str(rand2)}")
+    ans = int(input("Your answer: "))
 
 

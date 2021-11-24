@@ -37,14 +37,14 @@ while bestScore <= 9:
         print("Excellent! Your answer is correct!（*^_^*)")
     else:
         print(f"Your answer is incorrect! The answer is {sum}, (×_×)")
-        bestScore += 1
-print(f"You got {pScore} out of {bestScore} questions correct")
+        bestScore += 0
+print(f"\nYou got {pScore} out of {bestScore} questions correct")
 if pScore == 10:
-    print(f"Congratulations {player}! You are already expert in adding numbers! ┍ლ(╹◡╹ლ)")
+    print(f"\nCongratulations {player}! You are already expert in adding numbers! ┍ლ(╹◡╹ლ)")
 elif pScore >= 6 and pScore <=9:
-    print(f"You've done a great job {player}! Practice more and come back to perfect this quiz! (^_^)")
+    print(f"\nYou've done a great job {player}! Practice more and come back to perfect this quiz! (^_^)")
 else:
     if pScore <= 5:
-        print(f"Sadly you failed the quiz {player} へ（>_<へ), I think you need to focus on adding numbers!")
+        print(f"\nSadly you failed the quiz {player} へ（>_<へ), I think you need to focus on adding numbers!")
         print("Better luck next time （*^_^*)")
 
